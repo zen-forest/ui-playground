@@ -5,7 +5,7 @@ import spacing from './src/design-system/spacing';
 import borderRadius from './src/design-system/borderRadius';
 
 const config: Config = {
-  darkMode: 'class',  // Enable class-based dark mode
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,19 +14,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",  // Using CSS variable for dynamic theming
-        foreground: "var(--foreground)",  // Same for foreground
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         light: {
-          background: colors.light.background,
-          foreground: colors.light.foreground,
+          background: colors.light['bg-base'],
+          foreground: colors.light['text-primary'],
         },
         dark: {
-          background: colors.dark.background,
-          foreground: colors.dark.foreground,
+          background: colors.dark['bg-base'],
+          foreground: colors.dark['text-primary'],
         },
         custom: {
-          background: colors.custom.background,
-          foreground: colors.custom.foreground,
+          background: colors.custom['bg-base'],
+          foreground: colors.custom['text-primary'],
         },
       },
       spacing: {
