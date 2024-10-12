@@ -1,18 +1,72 @@
 const colors = {
     light: {
-      background: '#ffffff',
-      foreground: '#000000',
+        'bg-base': '#f8f9fa',
+        'bg-offset': '#e9ecef',
+        'bg-offset-plus': '#dee2e6',
+        'bg-idle': '#f1f3f5',
+        'text-primary': '#212529',
+        'text-primary-inverse': '#ffffff',
+        'text-secondary': '#6c757d',
+        'text-secondary-inverse': '#ffffff',
+        'border-base': '#ced4da',
+        'border-offset': '#adb5bd',
+        'border-offset-plus': '#6c757d',
+        'border-highlight': '#007bff',
+        'brand-highlight': '#0070f3',
+        'success': '#28a745',
+        'error': '#dc3545',
+        'warning': '#ffc107',
+        'transparency-80': 'rgba(0, 0, 0, 0.8)',
+        'transparency-60': 'rgba(0, 0, 0, 0.6)',
+        'transparency-40': 'rgba(0, 0, 0, 0.4)',
+        'transparency-20': 'rgba(0, 0, 0, 0.2)',
     },
     dark: {
-      background: '#1a202c',
-      foreground: '#f7fafc',
+        'bg-base': '#2d3748',
+        'bg-offset': '#4a5568',
+        'bg-offset-plus': '#718096',
+        'bg-idle': '#4a5568',
+        'text-primary': '#ffffff',
+        'text-primary-inverse': '#000000',
+        'text-secondary': '#e9ecef',
+        'text-secondary-inverse': '#000000',
+        'border-base': '#4a5568',
+        'border-offset': '#cbd5e0',
+        'border-offset-plus': '#e2e8f0',
+        'border-highlight': '#007bff',
+        'brand-highlight': '#0070f3',
+        'success': '#28a745',
+        'error': '#dc3545',
+        'warning': '#ffc107',
+        'transparency-80': 'rgba(255, 255, 255, 0.8)',
+        'transparency-60': 'rgba(255, 255, 255, 0.6)',
+        'transparency-40': 'rgba(255, 255, 255, 0.4)',
+        'transparency-20': 'rgba(255, 255, 255, 0.2)',
     },
     custom: {
-      background: '#f0e68c',  // Example custom theme
-      foreground: '#4b0082',
+        'bg-base': '#f8f9fa',
+        'bg-offset': '#e9ecef',
+        'bg-offset-plus': '#dee2e6',
+        'bg-idle': '#f1f3f5',
+        'text-primary': '#212529',
+        'text-primary-inverse': '#ffffff',
+        'text-secondary': '#6c757d',
+        'text-secondary-inverse': '#ffffff',
+        'border-base': '#ced4da',
+        'border-offset': '#adb5bd',
+        'border-offset-plus': '#6c757d',
+        'border-highlight': '#007bff',
+        'brand-highlight': '#0070f3',
+        'success': '#28a745',
+        'error': '#dc3545',
+        'warning': '#ffc107',
+        'transparency-80': 'rgba(0, 0, 0, 0.8)',
+        'transparency-60': 'rgba(0, 0, 0, 0.6)',
+        'transparency-40': 'rgba(0, 0, 0, 0.4)',
+        'transparency-20': 'rgba(0, 0, 0, 0.2)',
     },
-  };
-  
-  export type ThemeColors = keyof typeof colors;
-  
-  export default colors;
+};
+
+export type ThemeColors = keyof typeof colors;
+
+export default colors;
